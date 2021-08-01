@@ -55,7 +55,7 @@ export default {
 
   server: {
     host: '0.0.0.0',
-    port: 80
+    port: 8080
   },
 
   eslint: {
