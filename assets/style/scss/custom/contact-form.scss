@@ -1,0 +1,20 @@
+// Style REX yForm Elements to fit the overall appearance
+
+.rex-yform {
+
+    label.control-label {
+        @extend .uk-form-label;
+    }
+
+    input[type="text"].form-control {
+        @extend .uk-input;
+    }
+
+    .btn {
+        @extend .uk-button;
+
+        &.btn-primary {
+            @extend .uk-button-primary;
+        }
+    }
+}

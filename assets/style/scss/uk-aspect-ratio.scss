@@ -1,0 +1,34 @@
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+	width   : 100%;
+	height  : 100%;
+
+	&:before {
+		display    : block;
+		content    : "";
+		width      : 100%;
+		padding-top: $height / $width * 100%;
+	}
+
+	> *:not(:nth-child(n+1)) {
+		position: absolute;
+		top     : 0;
+		left    : 0;
+		right   : 0;
+		bottom  : 0;
+		width   : 100%;
+		min-height  : auto;
+	}
+}
+
+.uk-aspect-ratio {
+	&-16-9 {
+		@include aspect-ratio(16, 9);
+	}
+	&-21-9 {
+		@include aspect-ratio(21, 9);
+	}
+	&-3-2 {
+		@include aspect-ratio(3, 2);
+	}
+}

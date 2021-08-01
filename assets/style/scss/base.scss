@@ -1,0 +1,11 @@
+@mixin hook-base-heading {
+    font-weight: 900;
+}
+
+@mixin hook-base-body() {
+    box-shadow: inset 0px 10px 100px -20px rgba(black,0.25)
+}
+
+[onclick] {
+    cursor: pointer;
+}

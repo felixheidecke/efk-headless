@@ -1,0 +1,28 @@
+.\$article {
+    &-titlebox {
+        transform: translate(-$card-small-body-padding-horizontal, calc(-100% + #{$card-small-body-padding-horizontal}));
+
+        > div {
+            padding: $global-gutter $global-large-gutter;
+        }
+    }
+
+    &-ext-link-icon-inline {
+        transform: translateY(-2px) !important;
+
+        &[data-svg$='apple.svg'] {
+            margin: {
+                left: -2px;
+                right: 1px;
+            }
+        }
+        
+        &[data-svg$='spotify.svg'] {
+            padding: 1px 0;
+            margin: {
+                left: 2px;
+                right: 3px;
+            }
+        }
+    }
+}

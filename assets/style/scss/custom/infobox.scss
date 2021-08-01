@@ -1,0 +1,5 @@
+.\$infobox {
+    & > .uk-alert:last-of-type() {
+        @extend .uk-margin-remove-bottom;
+    }
+}

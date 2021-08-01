@@ -1,0 +1,16 @@
+@mixin hook-button-text() {
+    font-weight: 600;
+}
+
+@mixin hook-button() {
+    &.uk-button-icon-only:not(.uk-button-small) {
+        @extend .uk-flex;
+        @extend .uk-flex-middle;
+
+        height: $global-control-height;
+        padding: {
+            left: $global-small-gutter;
+            right: $global-small-gutter;
+        }
+    }
+}

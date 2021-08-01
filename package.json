@@ -13,7 +13,9 @@
   "dependencies": {
     "@nuxt/content": "^1.14.0",
     "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "nuxt": "^2.15.3",
+    "nuxt-mq": "^2.0.2",
+    "uikit": "^3.6.20"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^6.0.0",
@@ -21,6 +23,9 @@
     "babel-eslint": "^10.1.0",
     "eslint": "^7.22.0",
     "eslint-plugin-nuxt": "^2.0.0",
-    "eslint-plugin-vue": "^7.7.0"
+    "eslint-plugin-vue": "^7.7.0",
+    "nuxt-svg-loader": "^1.2.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^10.1.1"
   }
 }

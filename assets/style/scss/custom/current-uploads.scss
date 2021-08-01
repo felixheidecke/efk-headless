@@ -1,0 +1,7 @@
+.\$current-uploads {
+    @media (min-width: $breakpoint-small) and (max-width: $breakpoint-small-max) {
+        [uk-grid] > div:nth-of-type(3) {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,32 @@
+// Import UIkit default theme (or uikit.scss with only core styles)
+
+@import "scss/icons";
+
+// Custom variables and variable overwrites.
+@import "scss/variables";
+
+// Custom mixin overwrites.
+@import "scss/uk-aspect-ratio";
+@import "scss/base";
+@import "scss/button";
+@import "scss/card";
+@import "scss/text";
+@import "scss/heading";
+@import "scss/height";
+
+@import "scss/article";
+
+@import "scss/custom/presented";
+@import "scss/custom/teaser-list";
+@import "scss/custom/current-uploads";
+@import "scss/custom/image-teaser";
+@import "scss/custom/infobox";
+@import "scss/custom/textblock";
+@import "scss/custom/image";
+@import "scss/custom/youtube-embed";
+@import "scss/custom/burger";
+@import "scss/custom/contact-form";
+@import "scss/custom/latest-bwb-episodes";
+
+// 4. Import UIkit.
+@import "~/node_modules/uikit/src/scss/uikit-theme.scss";

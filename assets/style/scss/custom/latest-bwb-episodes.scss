@@ -1,0 +1,13 @@
+.\$latest-bwb-episodes__episode {
+    &_banner {
+        width: 100px;
+        opacity: .5;
+        transition: opacity .25s ease-in-out;
+    }
+
+    &:hover {
+        .\$latest-bwb-episodes__episode_banner {
+            opacity: .85;
+        }
+    }
+}

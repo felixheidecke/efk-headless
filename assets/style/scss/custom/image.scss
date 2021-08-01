@@ -1,0 +1,10 @@
+.\$image-inline {
+
+    @media (min-width: $breakpoint-medium) {
+        transform: translateX(-$global-gutter);
+    }
+
+    @media (min-width: $breakpoint-large) {
+        transform: translateX(-$global-medium-gutter);
+    }
+}

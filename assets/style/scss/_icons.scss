@@ -1,0 +1,35 @@
+$icon_map: (
+    thumbs_up : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJub25lIiBkPSJNMjQgMjRIMFYwaDI0djI0eiIvPjxwYXRoIGQ9Ik0yIDIwaDJjLjU1IDAgMS0uNDUgMS0xdi05YzAtLjU1LS40NS0xLTEtMUgydjExem0xOS44My03LjEyYy4xMS0uMjUuMTctLjUyLjE3LS44VjExYzAtMS4xLS45LTItMi0yaC01LjVsLjkyLTQuNjVjLjA1LS4yMi4wMi0uNDYtLjA4LS42Ni0uMjMtLjQ1LS41Mi0uODYtLjg4LTEuMjJMMTQgMiA3LjU5IDguNDFDNy4yMSA4Ljc5IDcgOS4zIDcgOS44M3Y3Ljg0QzcgMTguOTUgOC4wNSAyMCA5LjM0IDIwaDguMTFjLjcgMCAxLjM2LS4zNyAxLjcyLS45N2wyLjY2LTYuMTV6IiBmaWxsPSIjNDQ0NDQ0Ii8+PC9zdmc+'
+,   eye : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTEyIDQuNUM3IDQuNSAyLjczIDcuNjEgMSAxMmMxLjczIDQuMzkgNiA3LjUgMTEgNy41czkuMjctMy4xMSAxMS03LjVjLTEuNzMtNC4zOS02LTcuNS0xMS03LjV6TTEyIDE3Yy0yLjc2IDAtNS0yLjI0LTUtNXMyLjI0LTUgNS01IDUgMi4yNCA1IDUtMi4yNCA1LTUgNXptMC04Yy0xLjY2IDAtMyAxLjM0LTMgM3MxLjM0IDMgMyAzIDMtMS4zNCAzLTMtMS4zNC0zLTMtM3oiIGZpbGw9IiM0NDQ0NDQiLz48L3N2Zz4='
+,   comment : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMjEuOTkgNGMwLTEuMS0uODktMi0xLjk5LTJINGMtMS4xIDAtMiAuOS0yIDJ2MTJjMCAxLjEuOSAyIDIgMmgxNGw0IDQtLjAxLTE4ek0xOCAxNEg2di0yaDEydjJ6bTAtM0g2VjloMTJ2MnptMC0zSDZWNmgxMnYyeiIgZmlsbD0iIzQ0NDQ0NCIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4='
+,   menu_white : 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMgMThoMTh2LTJIM3Yyem0wLTVoMTh2LTJIM3Yyem0wLTd2MmgxOFY2SDN6IiBmaWxsPSJ3aGl0ZSIvPjwvc3ZnPg=='
+);
+
+// -- for usage in @media context
+@mixin icon($icon : '') {
+    @if $icon != '' {
+        background-image: url(map-get($icon_map, $icon));
+    }
+}
+
+// -- for usage in @extend and DOM env
+.icon {
+    width: 24px;
+    height: 24px;
+    background: {
+        position: center center;
+        repeat: no-repeat;
+        size: 100% auto;
+    }
+    
+    &-small {
+        width: 20px;
+        height: 20px;
+    }
+    
+    @each $icon, $image in $icon_map {
+        &__#{$icon} {
+            background-image: url($image);
+        }
+    }
+}

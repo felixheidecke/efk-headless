@@ -1,0 +1,31 @@
+$global-font-size: 18px;
+$base-body-font-size: 20px;
+$global-background: white;
+
+$global-color: #333;
+$global-emphasis-color: #333;
+$global-muted-color: rgb(102, 127, 163);
+
+$global-primary-background: rgb(240, 100, 0);
+$global-secondary-background: rgb(70, 95, 110);
+$global-muted-background: mix($global-secondary-background, white, 7.5%);
+
+$global-link-color: $global-secondary-background;
+$global-link-hover-color: $global-primary-background;
+
+$global-success-background: rgb(104, 214, 14);
+$global-warning-background: rgb(255, 136, 0);
+$global-danger-background: rgb(224, 0, 0);
+
+$global-border: #ccd4e0;
+
+$navbar-nav-item-height: 60px;
+
+$base-em-color: rgb(240, 100, 0);
+
+$global-font-family: "Source Sans Pro";
+$base-body-font-weight: 300;
+$base-strong-font-weight: 900;
+
+@import "~/node_modules/uikit/src/scss/variables-theme.scss";
+@import "~/node_modules/uikit/src/scss/mixins-theme.scss";
